@@ -6,7 +6,7 @@
 AItemBase::AItemBase() :
 	score(0),
 	speed(4.55f),
-	canMove(1),
+	canMove(true),
 	itemDescription("Hello World Description!"),
 	xp(0)
 {
@@ -56,7 +56,6 @@ void AItemBase::ShowLogs()
 	UE_LOG(LogTemp, Warning, TEXT("Can Move: %d"), canMove);
 	UE_LOG(LogTemp, Warning, TEXT("Item Description: %s"), *itemDescription);
 	UE_LOG(LogTemp, Warning, TEXT("XP: %d"), xp);
-
 }
 
 void AItemBase::AddScore(int points, bool canAddBonus, int pointsBonus)
