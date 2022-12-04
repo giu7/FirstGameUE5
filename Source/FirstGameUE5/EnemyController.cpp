@@ -30,7 +30,7 @@ void AEnemyController::Tick(float DeltaTime)
 	NewLocation.X += Speed * DeltaTime;
 	SetActorLocation(NewLocation);
 
-	if(NewLocation.X > 3500.0f)
+	if(NewLocation.X < 1600.0f)
 	{
 		this -> Destroy();
 	}

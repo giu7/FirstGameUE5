@@ -34,11 +34,16 @@ public:
 	float Speed = 10.0f;
 
 	UPROPERTY(EditAnywhere, Category="Spawning")
-	TSubclassOf<class ABulletController> BulletBP;
+	TSubclassOf<ABulletController> BulletBP;
 
 	void MoveXAxis(float AxisValue);
 	void MoveYAxis(float AxisValue);
 	void OnShoot();
 
 	FVector CurrentVelocity;
+
+	bool Died;
+
+	UFUNCTION()
+	void OnTriggerEnter(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 };

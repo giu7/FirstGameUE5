@@ -2,7 +2,10 @@
 
 
 #include "ShipController.h"
+
+#include "EnemyController.h"
 #include "Components/BoxComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AShipController::AShipController()
@@ -11,8 +14,10 @@ AShipController::AShipController()
 	PrimaryActorTick.bCanEverTick = true;
 
 	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("ROOT"));
+	CollisionBox -> SetGenerateOverlapEvents(true);
+	CollisionBox -> OnComponentBeginOverlap.AddDynamic(this, &AShipController::OnTriggerEnter);
+	
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
-
 }
 
 // Called when the game starts or when spawned
@@ -57,6 +62,7 @@ void AShipController::MoveYAxis(float AxisValue)
 
 void AShipController::OnShoot()
 {
+	UE_LOG(LogTemp, Warning, TEXT("SHOOTING"))
 	UWorld* World = GetWorld();
 
 	if (World)
@@ -64,6 +70,18 @@ void AShipController::OnShoot()
 		FVector Location = GetActorLocation();
 		Location.X += 25;
 		World -> SpawnActor<ABulletController>(BulletBP, Location, FRotator::ZeroRotator);
+	}
+}
+
+void AShipController::OnTriggerEnter(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor -> IsA(AEnemyController::StaticClass()))
+	{
+		Died = true;
+		this -> SetActorHiddenInGame(true);
+
+		UGameplayStatics::SetGamePaused(GetWorld(), true);
 	}
 }
 
