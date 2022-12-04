@@ -1,0 +1,42 @@
+[
+	{
+		"file": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Source/FirstGameUE5/FirstGameUE5.Build.cs",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/.vscode/compileCommands_FirstGameUE5/FirstGameUE5.247.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.1/Engine/Source"
+	},
+	{
+		"file": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Source/FirstGameUE5/FirstGameUE5.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/.vscode/compileCommands_FirstGameUE5/FirstGameUE5.247.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.1/Engine/Source"
+	},
+	{
+		"file": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Source/FirstGameUE5/FirstGameUE5.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/.vscode/compileCommands_FirstGameUE5/FirstGameUE5.247.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.1/Engine/Source"
+	},
+	{
+		"file": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Source/FirstGameUE5/FirstGameUE5GameModeBase.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/.vscode/compileCommands_FirstGameUE5/FirstGameUE5.247.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.1/Engine/Source"
+	},
+	{
+		"file": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Source/FirstGameUE5/FirstGameUE5GameModeBase.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/.vscode/compileCommands_FirstGameUE5/FirstGameUE5.247.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.1/Engine/Source"
+	}
+]

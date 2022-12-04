@@ -1,0 +1,740 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "FirstGameUE5 Mac Debug Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Debug",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Debug Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Debug",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 Mac Debug Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Debug Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Debug",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac DebugGame Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "DebugGame",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac DebugGame Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "DebugGame",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 Mac DebugGame Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac DebugGame Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "DebugGame",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Development Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Development",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Development Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Development",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 Mac Development Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Development Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Development",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Test Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Test",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Test Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Test",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 Mac Test Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Test Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Test",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Shipping Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Shipping",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Shipping Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Shipping",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 Mac Shipping Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 Mac Shipping Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "Mac",
+                "Shipping",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Debug Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Debug",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Debug Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Debug",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 IOS Debug Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Debug Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Debug",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS DebugGame Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "DebugGame",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS DebugGame Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "DebugGame",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 IOS DebugGame Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS DebugGame Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "DebugGame",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Development Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Development",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Development Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Development",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 IOS Development Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Development Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Development",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Test Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Test",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Test Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Test",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 IOS Test Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Test Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Test",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Shipping Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Shipping",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Shipping Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Shipping",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5 IOS Shipping Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5 IOS Shipping Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5",
+                "IOS",
+                "Shipping",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5Editor Mac Debug Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5Editor",
+                "Mac",
+                "Debug",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5Editor Mac Debug Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5Editor",
+                "Mac",
+                "Debug",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5Editor Mac Debug Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5Editor Mac Debug Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5Editor",
+                "Mac",
+                "Debug",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5Editor Mac DebugGame Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5Editor",
+                "Mac",
+                "DebugGame",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5Editor Mac DebugGame Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5Editor",
+                "Mac",
+                "DebugGame",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5Editor Mac DebugGame Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5Editor Mac DebugGame Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5Editor",
+                "Mac",
+                "DebugGame",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5Editor Mac Development Build",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5Editor",
+                "Mac",
+                "Development",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5Editor Mac Development Rebuild",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5Editor",
+                "Mac",
+                "Development",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "FirstGameUE5Editor Mac Development Clean"
+            ],
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "label": "FirstGameUE5Editor Mac Development Clean",
+            "group": "build",
+            "command": "Engine/Build/BatchFiles/Mac/Build.sh",
+            "args": [
+                "FirstGameUE5Editor",
+                "Mac",
+                "Development",
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-waitmutex",
+                "-clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "type": "shell",
+            "options": {
+                "cwd": "/Users/Shared/Epic Games/UE_5.1"
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Task generated by Debugger."
+        }
+    ]
+}

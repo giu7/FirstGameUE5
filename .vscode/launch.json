@@ -1,0 +1,113 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch FirstGameUE5 (Debug)",
+            "request": "launch",
+            "program": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+            "preLaunchTask": "FirstGameUE5 Mac Debug Build",
+            "args": [],
+            "cwd": "/Users/Shared/Epic Games/UE_5.1",
+            "type": "lldb"
+        },
+        {
+            "name": "Launch FirstGameUE5 (DebugGame)",
+            "request": "launch",
+            "program": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+            "preLaunchTask": "FirstGameUE5 Mac DebugGame Build",
+            "args": [],
+            "cwd": "/Users/Shared/Epic Games/UE_5.1",
+            "type": "lldb"
+        },
+        {
+            "name": "Launch FirstGameUE5 (Development)",
+            "request": "launch",
+            "program": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+            "preLaunchTask": "FirstGameUE5 Mac Development Build",
+            "args": [],
+            "cwd": "/Users/Shared/Epic Games/UE_5.1",
+            "type": "lldb"
+        },
+        {
+            "name": "Launch FirstGameUE5 (Test)",
+            "request": "launch",
+            "program": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+            "preLaunchTask": "FirstGameUE5 Mac Test Build",
+            "args": [],
+            "cwd": "/Users/Shared/Epic Games/UE_5.1",
+            "type": "lldb"
+        },
+        {
+            "name": "Launch FirstGameUE5 (Shipping)",
+            "request": "launch",
+            "program": "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+            "preLaunchTask": "FirstGameUE5 Mac Shipping Build",
+            "args": [],
+            "cwd": "/Users/Shared/Epic Games/UE_5.1",
+            "type": "lldb"
+        },
+        {
+            "name": "Launch FirstGameUE5Editor (Debug)",
+            "request": "launch",
+            "program": "/Users/Shared/Epic Games/UE_5.1/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+            "preLaunchTask": "FirstGameUE5Editor Mac Debug Build",
+            "args": [
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject"
+            ],
+            "cwd": "/Users/Shared/Epic Games/UE_5.1",
+            "type": "lldb"
+        },
+        {
+            "name": "Launch FirstGameUE5Editor (DebugGame)",
+            "request": "launch",
+            "program": "/Users/Shared/Epic Games/UE_5.1/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+            "preLaunchTask": "FirstGameUE5Editor Mac DebugGame Build",
+            "args": [
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject"
+            ],
+            "cwd": "/Users/Shared/Epic Games/UE_5.1",
+            "type": "lldb"
+        },
+        {
+            "name": "Launch FirstGameUE5Editor (Development)",
+            "request": "launch",
+            "program": "/Users/Shared/Epic Games/UE_5.1/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+            "preLaunchTask": "FirstGameUE5Editor Mac Development Build",
+            "args": [
+                "/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject"
+            ],
+            "cwd": "/Users/Shared/Epic Games/UE_5.1",
+            "type": "lldb"
+        },
+        {
+            "name": "Generate Project Files",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "/Users/Shared/Epic Games/UE_5.1/Engine/Build/BatchFiles/RunUBT.bat",
+            "args": [
+                "-projectfiles",
+                "-vscode",
+                "-project=/Users/giuseppepiano/Documents/playground/UnrealEngine/FirstGameUE5/FirstGameUE5.uproject",
+                "-game",
+                "-engine"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "stopAtEntry": false,
+            "cwd": "/Users/Shared/Epic Games/UE_5.1"
+        },
+        {
+            "name": "C/C++: g++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: g++ build active file"
+        }
+    ]
+}
