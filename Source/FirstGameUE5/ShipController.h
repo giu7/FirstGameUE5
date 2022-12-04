@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "BulletController.h"
 #include "GameFramework/Pawn.h"
 #include "ShipController.generated.h"
 
@@ -32,8 +33,12 @@ public:
 	UPROPERTY(EditAnywhere)
 	float Speed = 10.0f;
 
+	UPROPERTY(EditAnywhere, Category="Spawning")
+	TSubclassOf<class ABulletController> BulletBP;
+
 	void MoveXAxis(float AxisValue);
 	void MoveYAxis(float AxisValue);
+	void OnShoot();
 
 	FVector CurrentVelocity;
 };
