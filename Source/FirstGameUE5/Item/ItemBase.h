@@ -15,12 +15,24 @@ public:
 	// Sets default values for this actor's properties
 	AItemBase();
 
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	int AddXP();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	
+	int score;
+	float speed;
+	bool canMove;
+	FString itemDescription;
+	int xp;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	void ShowLogs();
+	void AddScore(int points, bool canAddBonus = false, int pointsBonus = 2);
+
+private:	
 
 };
