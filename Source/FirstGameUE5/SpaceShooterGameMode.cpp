@@ -16,7 +16,6 @@ void ASpaceShooterGameMode::BeginPlay()
 
 void ASpaceShooterGameMode::Tick(float DeltaSeconds)
 {
-	UE_LOG(LogTemp, Warning, TEXT("TICK"));
 	Super::Tick(DeltaSeconds);
 
 	GameTimer += DeltaSeconds;
