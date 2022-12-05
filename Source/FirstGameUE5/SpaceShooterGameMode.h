@@ -28,12 +28,24 @@ public:
 
 	void IncrementScore();
 
+	void OnGameOver();
+
 	UPROPERTY(EditAnywhere, Category="Spawning")
 	TSubclassOf<AEnemyController> EnemyBlueprint;
 
 	float EnemyTimer;
 	float GameTimer;
 
+	UFUNCTION(BlueprintCallable, Category="UMG Game")
+	void ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass);
+
 protected:
 	int Score = 0;
+
+	UPROPERTY(EditAnywhere, Category="UMG Game")
+	TSubclassOf<UUserWidget> StartingWidgetClass;
+
+	UPROPERTY()
+	UUserWidget* CurrentWidget;
+
 };

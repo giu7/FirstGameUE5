@@ -3,6 +3,9 @@
 
 #include "SpaceShooterGameMode.h"
 
+#include "GameWidget.h"
+#include "Blueprint/UserWidget.h"
+
 ASpaceShooterGameMode::ASpaceShooterGameMode()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -11,7 +14,10 @@ ASpaceShooterGameMode::ASpaceShooterGameMode()
 void ASpaceShooterGameMode::BeginPlay()
 {
 	Super::BeginPlay();
-	UE_LOG(LogTemp, Warning, TEXT("CIAO"));
+
+	ChangeMenuWidget(StartingWidgetClass);
+	((UGameWidget*)CurrentWidget)->Load();
+	
 }
 
 void ASpaceShooterGameMode::Tick(float DeltaSeconds)
@@ -42,4 +48,29 @@ void ASpaceShooterGameMode::IncrementScore()
 {
 	Score += 100;
 	UE_LOG(LogTemp, Warning, TEXT("Score updated %d"), Score);
+	((UGameWidget*)CurrentWidget)->SetScore(Score);
+}
+
+void ASpaceShooterGameMode::OnGameOver()
+{
+	((UGameWidget*)CurrentWidget)->OnGameOver(Score);
+}
+
+void ASpaceShooterGameMode::ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass)
+{
+	if (CurrentWidget != nullptr)
+	{
+		CurrentWidget->RemoveFromViewport();
+		CurrentWidget = nullptr;
+	}
+
+	if (NewWidgetClass != nullptr)
+	{
+		CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), NewWidgetClass);
+
+		if (CurrentWidget != nullptr)
+		{
+			CurrentWidget->AddToViewport();
+		}
+	}
 }

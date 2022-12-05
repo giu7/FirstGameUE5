@@ -3,6 +3,7 @@
 
 #include "BulletController.h"
 #include "EnemyController.h"
+#include "SpaceShooterGameMode.h"
 #include "Components/BoxComponent.h"
 
 // Sets default values
@@ -51,6 +52,8 @@ void ABulletController::OnTriggerEnter(UPrimitiveComponent* OverlappedComponent,
 	{
 		this -> Destroy();
 		OtherActor -> Destroy();
+
+		((ASpaceShooterGameMode*)GetWorld()->GetAuthGameMode())->IncrementScore();
 	}
 }
 

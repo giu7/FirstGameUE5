@@ -4,9 +4,11 @@
 #include "ShipController.h"
 
 #include "EnemyController.h"
+#include "SpaceShooterGameMode.h"
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
 
+class ASpaceShooterGameMode;
 // Sets default values
 AShipController::AShipController()
 {
@@ -88,6 +90,8 @@ void AShipController::OnTriggerEnter(UPrimitiveComponent* OverlappedComponent, A
 	{
 		Died = true;
 		this -> SetActorHiddenInGame(true);
+
+		((ASpaceShooterGameMode*)GetWorld()->GetAuthGameMode())->OnGameOver();
 
 		UGameplayStatics::SetGamePaused(GetWorld(), true);
 	}
