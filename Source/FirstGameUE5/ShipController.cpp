@@ -62,7 +62,6 @@ void AShipController::MoveYAxis(float AxisValue)
 
 void AShipController::OnShoot()
 {
-	UE_LOG(LogTemp, Warning, TEXT("SHOOTING"))
 	UWorld* World = GetWorld();
 
 	if (World)
